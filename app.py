@@ -512,10 +512,11 @@ if len(QUESTIONS) < 100:
 # Build mapping for letters
 LETTER_MAP = {"A": 0, "B": 1, "C": 2, "D": 3}
 
-st.set_page_config(page_title="CockroachDB Simulator Quiz (100 Q) - Created by Prashant K", layout="wide")
-st.title("CockroachDB Simulator — 100-question MCQ Quiz By Prashant K")
+st.set_page_config(page_title="CockroachDB Simulator Quiz (100 Q)", layout="wide")
+st.title("CockroachDB Simulator — 100-question MCQ Quiz")
 st.markdown("**Scoring:** +10 for each correct answer; 0 for each wrong answer.")
-st.write("Answer all questions and press **Submit**. After submission you'll see which answers were correct or wrong and your total score.")
+st.markdown(f"### Question {idx+1}")
+            st.write("Answer all questions and press **Submit**. After submission you'll see which answers were correct or wrong and your total score.")
 
 # Use a form to collect answers and submit once
 with st.form(key='quiz_form'):
