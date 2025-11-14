@@ -1,6 +1,6 @@
 import streamlit as st
 
-# CockroachDB Simulator - 100 question MCQ Quiz
+# CockroachDB Simulator - 200 question MCQ Quiz
 # Two modes: Practice (immediate feedback) and Exam (feedback after submission)
 # Scoring: +10 for correct, 0 for wrong
 
@@ -226,8 +226,8 @@ QUESTIONS = [
 # Build mapping for letters
 LETTER_MAP = {"A": 0, "B": 1, "C": 2, "D": 3}
 
-st.set_page_config(page_title="CockroachDB Simulator Quiz (100 Q)", layout="wide")
-st.title("CockroachDB Simulator — 100-question MCQ Quiz")
+st.set_page_config(page_title="CockroachDB Simulator Quiz (200 Q) - By Prashant k ", layout="wide")
+st.title("CockroachDB Simulator — 200 -question MCQ Quiz - By Prashant K")
 
 # Initialize session state
 if 'mode_selected' not in st.session_state:
